@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
     <link rel="stylesheet" href="./CSS/style.css">
+    <script src="https://kit.fontawesome.com/9e5d1913ca.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <img class="logo" src="./img/osb.jpg" alt="Me">
-        <nav>
-            <ul>
+        <nav class="bar">
+            <ul class="items">
                 <li><a href="">download</a></li>
                 <li><a href="">contact</a></li>
                 <li><a href="">about me</a></li>
@@ -22,19 +23,40 @@
     <main>
         <img class="background" src="./img/marek-piwnicki-_8zfgT9kS2g-unsplash.jpg" alt="background">
 
-        <label for="Rate">Rate the website:</label>
-        <select name="Rate" id="Rate">
+        <p class="msg"> 'Hello! my name is osama, I studied mechanical engineering, I have graduated on Feb. 2021, I have many goals, the most important goal is to be able to work as freelancer, nice to meet you ^_^ </p>
+
+        <h3 class="ul">summary</h3>
+        <ul class="history">
+            <li>my education : bachlor's degree</li>
+            <li>major of study : mechanical engineering</li>
+            <li>university name : Al zaytoonah university</li>
+            <li>learning programming</li>
+        </ul>
+        
+        <h3 class="ol">top ten hobbies</h3>
+        <ol class="topten">
+            <li>playing football</li>
+            <li>programming</li>
+            <li>learning</li>
+            <li>travelling</li>
+            <li>swimming</li>
+            <li>hiking</li>
+            <li>camping</li>
+            <li>walking</li>
+            <li>watching football</li>
+            <li>watching movies</li>
+        </ol>
+
+    </main>
+    <footer class="wholeFooter">
+        <label class="label" for="Rate">Rate the website:</label>
+        <select class="select" name="Rate" id="Rate">
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
             <option value="5">5</option>
         </select>
-
-        <p> 'Hello! my name is osama, I studied mechanical engineering, I have graduated on Feb. 2021, I have many goals, the most important goal is to be able to work as freelancer, nice to meet you ^_^ </p>
-
-    </main>
-    <footer>
         <ul class="end">
             <li><i class="fab fa-facebook"></i></li>
             <li><i class="fab fa-linkedin"></i></li>
@@ -44,7 +66,6 @@
     </footer>
 
     <script src="./JS/app.js"></script>
-    <script src="https://kit.fontawesome.com/9e5d1913ca.js" crossorigin="anonymous"></script>
 
 </body>
 </html>

@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #242522;
+}
+
+.logo {
+  width: 125px;
+  border-radius: 50px;
+}
+
+.background {
+  width: 600px;
+  margin-left: 500px;
+  border-radius: 100px;
+  display: block;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+.bar {
+  display: inline-block;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+.bar,
+a:hover {
+  color: #ce1212;
+}
+
+.msg {
+  text-align: center;
+  color: whitesmoke;
+  margin-top: 20px;
+}
+
+.history {
+  color: whitesmoke;
+  margin-left: 20px;
+  margin-right: 300px;
+  margin-top: 5px;
+}
+
+.topten {
+  color: whitesmoke;
+  margin-left: 20px;
+  margin-right: 300px;
+  margin-top: 5px;
+}
+
+.ol {
+  margin-left: 20px;
+  margin-right: 300px;
+  margin-top: 30px;
+  color: whitesmoke;
+}
+
+.ul {
+  margin-left: 20px;
+  margin-right: 300px;
+  margin-top: 10px;
+  color: whitesmoke;
+}
+
+.end {
+  text-align: center;
+  color: oldlace;
+}
+
+.wholeFooter {
+  text-align: center;
+  color: orangered;
+}
+
+.label {
+  color: seashell;
+  text-align: center;
+}
+
+.select {
+  color: seashell;
+  text-align: center;
+  margin-bottom: 20px;
+}
