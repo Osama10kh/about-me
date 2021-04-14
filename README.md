@@ -1,8 +1,13 @@
 # about-me
 
-- driver name : Bara'a
-- navigator name : Osama khader
 
-- adding 6th question asking the user about a number and give the user 4 attemps.
-- adding 7th question asking the user and giv him the choises and and the opportunity to resubmet 7 times
-- adding functions to the whole codes to make the code clear and readable.
+Baraa Al-Osaily: Driver
+Osama Khader: Navegator
+
+So today i wokr today with my best partner osama to
+
+1. Add function for each part of our code
+2. Edit the faults code in question number 7 and 6
+3. also we found new name of the function in the code
+4. Also work in some decration in css
+5. Also try function and conole log it
