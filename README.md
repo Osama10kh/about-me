@@ -1,7 +1,7 @@
 # about-me
 
-Baraa Al-Osaily: Driver
-Osama Khader: Navegator
+* Osama Khader: Navegator
+* Baraa Al-Osaily: Driver
 
 Summary of our editing class04
 

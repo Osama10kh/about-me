@@ -1,4 +1,3 @@
-/* eslint-disable no-constant-condition */
 'use strict';
 
 let finalResult=0;
@@ -21,7 +20,6 @@ function welcomeMSG(){
 
 function myName(){
   let questionOne = prompt('is my name Osama? ',' hint:first char. O').toLocaleLowerCase();
-  console.log('user answer about my name= '+ questionOne);
   if (questionOne === 'yes' || questionOne === 'y') {
     alert('correct!');
     finalResult = finalResult+1;
@@ -34,7 +32,6 @@ function myName(){
 
 function myField(){
   let questionTwo = prompt('am I a mechanical engineer?').toLocaleLowerCase();
-  console.log('user answer= '+ questionTwo);
   if (questionTwo === 'yes' || questionTwo === 'y') {
     alert('right answer');
     finalResult = finalResult+1;
@@ -47,7 +44,6 @@ function myField(){
 
 function myExperience(){
   let questionThree = prompt('Do I have mechanical experiences?').toLocaleLowerCase();
-  console.log('user answer if i have experiences = '+ questionThree);
   if (questionThree === 'yes'||questionThree === 'y') {
     alert('NOT YET');
   }else if (questionThree === 'no' || questionThree === 'n') {
@@ -60,7 +56,6 @@ function myExperience(){
 
 function amILoveFootball(){
   let questionFour = prompt('I love playing football, right?').toLocaleLowerCase();
-  console.log('user answer if i love football= '+ questionFour);
   if (questionFour === 'yes'||questionFour === 'y') {
     alert('I love football so much!');
     finalResult = finalResult+1;
@@ -73,7 +68,6 @@ function amILoveFootball(){
 
 function purposeOfWebsite(){
   let questionFive = prompt('Do I made this website for practicing purpose?').toLocaleLowerCase();
-  console.log('user answer= ' + questionFive);
   if (questionFive === 'yes' || questionFive === 'y') {
     alert('exactly');
     finalResult = finalResult+1;
