@@ -1,7 +1,7 @@
 /* eslint-disable no-constant-condition */
 'use strict';
 
-let gameScore=0;
+let finalResult=0;
 
 welcomeMSG();
 myName();
@@ -10,143 +10,128 @@ myExperience();
 amILoveFootball();
 purposeOfWebsite();
 myAge();
-guessMyfavorate();
+myTeam();
+finalPoint();
 
 function welcomeMSG(){
   let askUser = prompt('hello, what is your name?');
-  alert('Welcome '+ askUser + '^_^');
+  alert('Welcome '+ askUser + ' ^_^');
 }
 
 
 function myName(){
-  let questionOne = prompt('is my name Osama?','hint:first char. O').toLocaleLowerCase();
-  console.log('user answer= '+ questionOne);
-  if (questionOne === 'yes'||'y') {
+  let questionOne = prompt('is my name Osama? ',' hint:first char. O').toLocaleLowerCase();
+  console.log('user answer about my name= '+ questionOne);
+  if (questionOne === 'yes' || questionOne === 'y') {
     alert('correct!');
-  }else if (questionOne === 'no'||'n') {
+    finalResult = finalResult+1;
+  }else if (questionOne === 'no' || questionOne === 'n') {
     alert('incorretly my name is osama ^-^');
   }else {
-    alert('plz submet yes or no');
+    alert('plz submet yes/y or no/n');
   }
 }
 
 function myField(){
   let questionTwo = prompt('am I a mechanical engineer?').toLocaleLowerCase();
   console.log('user answer= '+ questionTwo);
-  if (questionTwo === 'yes'||'y') {
+  if (questionTwo === 'yes' || questionTwo === 'y') {
     alert('right answer');
-  }else if (questionTwo === 'no'||'n') {
+    finalResult = finalResult+1;
+  }else if (questionTwo === 'no' || questionTwo === 'n') {
     alert('I am a mechanical engineer');
   }else {
-    alert('plz submet yes or no');
+    alert('plz submet yes/y or no/n');
   }
 }
 
 function myExperience(){
   let questionThree = prompt('Do I have mechanical experiences?').toLocaleLowerCase();
-  console.log('user answer= '+ questionThree);
-  switch (questionThree) {
-  case 'yes'||'y':
-    alert('NOT YET -_-');
-    break;
-  case 'no'||'n':
-    alert('unfortunatly this is true');
-    break;
-  default:
-    alert('just yes or no!');
+  console.log('user answer if i have experiences = '+ questionThree);
+  if (questionThree === 'yes'||questionThree === 'y') {
+    alert('NOT YET');
+  }else if (questionThree === 'no' || questionThree === 'n') {
+    alert('true');
+    finalResult = finalResult+1;
+  }else {
+    alert('plz submet yes/y or no/n');
   }
 }
 
 function amILoveFootball(){
   let questionFour = prompt('I love playing football, right?').toLocaleLowerCase();
-  console.log(questionFour);
-  if (questionFour === 'yes'||'y') {
+  console.log('user answer if i love football= '+ questionFour);
+  if (questionFour === 'yes'||questionFour === 'y') {
     alert('I love football so much!');
-  }else if (questionFour === 'no'||'n') {
+    finalResult = finalResult+1;
+  }else if (questionFour === 'no' || questionFour === 'n') {
     alert('I told you I love it');
   }else {
-    alert('plz submet yes or no');
+    alert('plz submet yes/y or no/n');
   }
 }
 
 function purposeOfWebsite(){
   let questionFive = prompt('Do I made this website for practicing purpose?').toLocaleLowerCase();
-  console.log(questionFive);
-  if (questionFive === 'yes'||'y') {
+  console.log('user answer= ' + questionFive);
+  if (questionFive === 'yes' || questionFive === 'y') {
     alert('exactly');
-  }else if (questionFive === 'no'||'n') {
+    finalResult = finalResult+1;
+  }else if (questionFive === 'no' || questionFive === 'n') {
     alert('TBH, I made it for my assignment >_-');
   }else {
-    alert('plz submet yes or no');
+    alert('plz submet yes/y or no/n');
   }
 }
 
 
 function myAge(){
-  let age=23;
-  let guesscorrect = false;
+  let age = 23;
+  let rightAnswer = false;
   let questionSix = prompt('how old am I?');
-  for(let i=3; i>0 ; i--){
-    if (questionSix<18){
+  for(let i=4; i>0 ; i--){
+    if (questionSix < 18){
       questionSix = prompt('It is too low you still have '+i+' attempt');
-    }else if (questionSix>30){
+    }else if (questionSix > 30){
       questionSix = prompt('It is too high you still have '+i+' attempt');
-    }else if (questionSix>=25&&questionSix<=31 || questionSix<=23&&questionSix>=20){
-      questionSix=prompt('Too close you still have '+ i +'attempt');
-    // eslint-disable-next-line eqeqeq
-    }else if(questionSix==age){
-      alert('Good job my age is'+ age);
-      guesscorrect = true;
-      gameScore=gameScore+5;
+    }else if (questionSix <= 26 && questionSix > 23 || questionSix >=20 && questionSix < 23){
+      questionSix=prompt('answer was almost right '+ i +'attempt');
+    }else if(questionSix === '23'){
+      alert('correct! great my age is '+ age);
+      rightAnswer = true;
+      finalResult = finalResult+1;
       break;
+    }else{
+      questionSix = prompt('plz jsut number, you still have' +i+' attempt');
     }
   }
-  // eslint-disable-next-line eqeqeq
-  if (guesscorrect==false){
-    alert('You have eceed the number of attempt my age is'+age);
+  if (rightAnswer === false){
+    alert('my age is '+age);
   }
 
 }
 
 
-
-function guessMyfavorate(){
-  let myFavoriteTeam=['real', 'barca','liverpool','Cheelsy','Alahly','Alwehdat'];
-  let questionSeven = prompt('what is my favorite team?');
-  let correct=false;
-  for(let j=5;j>0;j--){
-    // eslint-disable-next-line for-direction
-    for(let i=0;i>=myFavoriteTeam.length;i++){
-      // eslint-disable-next-line eqeqeq
-      if(questionSeven==myFavoriteTeam.toLowerCase()){
-        correct=true;
-      }
-    }
-    if(correct){
-      alert('Goog job is my favorate team');
-      gameScore=gameScore+5;
+function myTeam(){
+  let myFavoriteTeam=['real', 'barca','liverpool','Cheelsy','AC milan','man u'];
+  let questionSeven = prompt('what is my favorite team? ', myFavoriteTeam);
+  let answer=false;
+  for(let x=6; x>0; x--){
+    if(questionSeven.toLocaleLowerCase() === myFavoriteTeam[0]){
+      answer=true;
+      alert('correct');
+      finalResult=finalResult+1;
       break;
-    }
-    else{
-      questionSeven=prompt('Try agian you still have'+ j +'attempt');
+    }else if (questionSeven !== myFavoriteTeam[0]){
+      questionSeven = prompt('Try agian you still have '+ x +' attempt').toLocaleLowerCase();
     }
   }
-  if(correct===false){
-    alert ('your attempts are finished the number my favorateteam are'+myFavoriteTeam);
+  if(answer === false){
+    alert ('your attempts are finished my favorite team is '+myFavoriteTeam[0]);
   }
 }
 
-function finalAttempt(){
-  alert('Good job your score is '+ gameScore);
+function finalPoint(){
+  alert('your result is '+ finalResult +' out of 7');
 }
-finalAttempt();
-
-
-
-
-function printName (name,age){
-  console.log('full name: ',name,age);
-}
-// eslint-disable-next-line no-undef
-printName(Baraa,Alosaily);
 

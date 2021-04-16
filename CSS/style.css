@@ -1,10 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap");
-/* dont put background for all the webpage */
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* background-color: #242522; */
 }
 body {
   background-color: rgb(116, 116, 116);
@@ -36,33 +35,6 @@ header {
   background-color: rgb(255, 255, 255);
   padding: 20px;
 }
-/* turn off all of this style  */
-/* .history {
-  color: whitesmoke;
-  margin-left: 20px;
-  margin-right: 300px;
-  margin-top: 5px;
-}
-
-.topten {
-  color: whitesmoke;
-  margin-left: 20px;
-  margin-right: 300px;
-  margin-top: 10 px;
-}
-
-.ol {
-  margin-left: 20px;
-  margin-right: 300px;
-  margin-top: 30px;
-}
-
-.ul {
-  margin-left: 20px;
-  margin-right: 300px;
-  margin-top: 10px;
-} */
-
 .end {
   text-align: center;
   color: oldlace;
