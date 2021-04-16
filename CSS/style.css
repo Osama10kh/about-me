@@ -6,7 +6,7 @@
   padding: 0;
 }
 body {
-  background-color: rgb(116, 116, 116);
+  background-color: #132c33;
 }
 .logo {
   width: 100px;
@@ -24,7 +24,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
+  background-color: #252525;
 }
 
 .msg {
@@ -34,6 +34,7 @@ header {
   font-size: 25px;
   background-color: rgb(255, 255, 255);
   padding: 20px;
+  border: solid;
 }
 .end {
   text-align: center;
@@ -51,19 +52,23 @@ header {
 }
 
 .label {
-  color: seashell;
+  color: orangered;
   text-align: center;
+  border: solid;
+  border-radius: 10px;
+  border-color: black;
 }
 
 .select {
-  color: seashell;
+  color: #151515;
   text-align: center;
   margin-bottom: 20px;
+  border: solid;
+  border-radius: 10px;
 }
 
 .header {
   text-align: center;
-  background-color: white;
 }
 
 .bar ul li {
@@ -72,18 +77,19 @@ header {
 }
 .bar ul li a {
   padding: 35px;
-  background-color: white;
   text-decoration: none;
   font-size: 30px;
+  font-family: cursive;
   font-weight: bold;
-  color: black;
+  color: whitesmoke;
 }
 
 .bar {
   float: right;
 }
 .bar ul li a:hover {
-  background-color: lightgray;
+  background-color: #132c33;
+  transition-duration: 300ms;
 }
 .col {
   text-align: center;
